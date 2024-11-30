@@ -22,6 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.279);
 }
 .main-header .logo {
   font-size: 1.8rem;
@@ -34,10 +35,8 @@ body {
   height: 2.5rem;
   border-radius: 20px;
   padding: 10px 20px;
-  color: white;
-  border-color: #3572ef;
   border-style: solid;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgb(255, 255, 255);
 }
 input:focus {
   outline: none;
@@ -169,6 +168,7 @@ input:focus {
   padding: 10px 20px;
   background-color: white;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.218);
+  overflow: auto;
 }
 .user-creation-form {
   width: 30rem;
@@ -414,7 +414,8 @@ input:focus {
 .floating-form .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2 columns of equal width */
-  gap: 20px; /* Spacing between fields */
+  column-gap: 20px; /* Spacing between fields */
+  row-gap: 10px;
 }
 /* Style the container to align the header and button */
 .header-container {

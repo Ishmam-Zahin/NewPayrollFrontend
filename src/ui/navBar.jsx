@@ -2,35 +2,35 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 export default function NavBar() {
-  const department = useSelector((state) => state.userState.department);
+  const user = useSelector((state) => state.userState);
   return (
     <nav className="nav-container">
       <div className="navheader">
         <p>
-          <b>User:</b> zahin
+          <b>User:</b> {user.name}
         </p>
         <p>
-          <b>Department:</b> center
+          <b>Department:</b> {user.department}
         </p>
       </div>
       <div className="links-container">
         <ul>
-          {department != "center" ? (
+          {user.department != "center" ? (
             <li>
               <NavLink to="employee/list">Employees</NavLink>
             </li>
           ) : null}
-          {department != "center" ? (
+          {user.department != "center" ? (
             <li>
               <NavLink to="payroll/list">Payroll</NavLink>
             </li>
           ) : null}
-          {department == "center" ? (
+          {user.department == "center" ? (
             <li>
               <NavLink to="globalComponent/list">Global Components</NavLink>
             </li>
           ) : null}
-          {department == "center" ? (
+          {user.department == "center" ? (
             <li>
               <NavLink to="users">Users</NavLink>
             </li>

@@ -17,7 +17,11 @@ export default function DeleteButton({ token, id }) {
     <button
       className="btn btn-red btn-small"
       disabled={isPending}
-      onClick={() => mutate({ id, token })}
+      onClick={() => {
+        if (confirm("Are you sure want to delete")) {
+          mutate({ id, token });
+        }
+      }}
     >
       {isPending ? "Loading..." : "DELETE"}
     </button>

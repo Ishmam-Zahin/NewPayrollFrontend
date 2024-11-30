@@ -20,6 +20,7 @@ export default function Header() {
   });
 
   if (isError) {
+    alert("Invalid Credentials");
     console.log(error);
   }
 
