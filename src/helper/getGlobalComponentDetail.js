@@ -1,5 +1,5 @@
 export default async function getGlobalComponent({ id, token }) {
-  const url = `https://ishmam420.pythonanywhere.com/api/v1/globalComponent/detail/${id}/`;
+  const url = `http://127.0.0.1:8000/api/v1/globalComponent/detail/${id}/`;
   const response = await fetch(url, {
     method: "GET",
     headers: {

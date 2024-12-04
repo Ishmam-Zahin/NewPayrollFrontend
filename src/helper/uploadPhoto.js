@@ -21,7 +21,7 @@ export default async function uploadPhoto({ token, employee, image }) {
 
   console.log(employee);
 
-  const url2 = `https://ishmam420.pythonanywhere.com/api/v1/employee/detail/${employeeId}/`;
+  const url2 = `http://127.0.0.1:8000/api/v1/employee/detail/${employeeId}/`;
   const response2 = await fetch(url2, {
     method: "PUT",
     headers: {

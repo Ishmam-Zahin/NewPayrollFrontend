@@ -1,5 +1,5 @@
 export default async function addCustomComponent({ token, component, id }) {
-  const url = `https://ishmam420.pythonanywhere.com/api/v1/customComponent/list/${id}/`;
+  const url = `http://127.0.0.1:8000/api/v1/customComponent/list/${id}/`;
 
   const response = await fetch(url, {
     method: "POST",

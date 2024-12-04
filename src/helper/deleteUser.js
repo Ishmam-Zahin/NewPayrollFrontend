@@ -1,5 +1,5 @@
 export default async function deleteUser({ token, userId }) {
-  const url = `https://ishmam420.pythonanywhere.com/api/v1/account/detail/${userId}/`;
+  const url = `http://127.0.0.1:8000/api/v1/account/detail/${userId}/`;
   const response = await fetch(url, {
     method: "DELETE",
     headers: {

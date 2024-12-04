@@ -1,5 +1,5 @@
 export default async function getEmployeeList({ token }) {
-  const url = "https://ishmam420.pythonanywhere.com/api/v1/employee/list/";
+  const url = "http://127.0.0.1:8000/api/v1/employee/list/";
   const response = await fetch(url, {
     method: "GET",
     headers: {

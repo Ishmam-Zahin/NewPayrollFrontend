@@ -1,4 +1,4 @@
-const url = "https://ishmam420.pythonanywhere.com/api/v1/account/logout/";
+const url = "http://127.0.0.1:8000/api/v1/account/logout/";
 
 export default async function logoutUser({ token }) {
   const response = await fetch(url, {

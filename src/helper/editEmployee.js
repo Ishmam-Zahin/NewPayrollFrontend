@@ -1,6 +1,6 @@
 export default async function EditEmployee({ employee, token, id }) {
   console.log(id);
-  const url = `https://ishmam420.pythonanywhere.com/api/v1/employee/detail/${id}/`;
+  const url = `http://127.0.0.1:8000/api/v1/employee/detail/${id}/`;
   const response = await fetch(url, {
     method: "PUT",
     headers: {

@@ -1,5 +1,5 @@
 export default async function calculatePayroll({ token, data }) {
-  const url = `https://ishmam420.pythonanywhere.com/api/v1/payslip/list/`;
+  const url = `http://127.0.0.1:8000/api/v1/payslip/list/`;
   const response = await fetch(url, {
     method: "POST",
     headers: {
